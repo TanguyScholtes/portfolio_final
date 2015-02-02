@@ -1,0 +1,62 @@
+extends layout.jade
+
+block title
+    
+    title Votre Panier - Woo4Men
+
+block content
+    - var pageName = 'Votre Panier'
+    - var articles = [['../img/chemise01.jpg', 'article-detail.html', 'LM LIGNES', 'Homme', 'L', 79.95, 1], ['../img/chemise02.jpg', 'article-detail.html', 'STORM', 'Homme', 'L', 65.99, 2]]
+    //Each article in the articles table is presented like this :
+    //0. Image URL
+    //1. Article page URL
+    //2. Article name
+    //3. Article sex
+    //4. Article size
+    //5. Article price
+    //6. Quantity
+    
+    section(class='shopping-cart')
+        h2=pageName
+        
+        h3(class='cart-step') Étape 1 sur 5 - Récapitulatif de la commande
+        
+        form(class='form')
+            table
+                thead(class='table-headings')
+                    tr
+                        th Produit
+                        th Description
+                        th Prix unitaire
+                        th Quantité
+                        th Total
+                tbody
+                    each val, index in articles
+                        tr(class='cart-list')
+                            td
+                                img(class='cart-product-mini', src=articles[index][0])
+                            td
+                                a(href=articles[index][1])=articles[index][2]
+                                span(class='cart-size')
+                                    | Taille (#{articles[index][3]}) : #{articles[index][4]}
+                            td
+                                span #{articles[index][5]} €
+                            td
+                                input(type='number', placeholder=articles[index][6])
+                                a(href='#')
+                                    img(class='cart-red-cross', src='../img/cross.png')
+                            td
+                                span #{articles[index][5]*articles[index][6]} €
+                    tr(class='cart-list')
+                        td
+                        td
+                        td
+                        td(class='table-bold table-pink')
+                            span Total produits TTC
+                        td(class='table-bold')
+                            span #{articles[0][5]*articles[0][6] + articles[1][5]*articles[1][6]} €
+            div(class='code-promo cart-encart')
+                label(for='code-promo') Code promotionnel
+                input(type='text', id='code-promo', name='code-promo')
+                button(class='button', type='button') Ajouter
+            button(class='button next-step', type='submit') Étape suivante »

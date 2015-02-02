@@ -1,0 +1,38 @@
+extends layout.jade
+
+block title
+    
+    title Votre Panier - Woo4Men
+
+block content
+    - var pageName = 'Votre Panier'
+    
+    section(class='shopping-cart')
+        h2=pageName
+        
+        h3(class='cart-step') Étape 2 sur 5 - Identification
+        
+        div(class='cart-register cart-encart')
+            form
+                legend Créez un compte
+                label(class='form-label') Adresse Email :
+                input(class='form-field', type='text')
+                br
+                label(class='form-label') Mot de passe :
+                input(class='form-field', type='text')
+                br
+                
+                button(class='button login-button', type='submit') Créer le compte
+                
+        div(class='cart-register cart-encart')
+            form
+                legend Ou connectez-vous
+                label(class='form-label') Adresse Email :
+                input(class='form-field', type='text')
+                br
+                label(class='form-label') Mot de passe :
+                input(class='form-field', type='text')
+                br
+                
+                button(class='button login-button', type='submit') Connexion
+        button(class='button previous-step', type='button') « Étape précédente

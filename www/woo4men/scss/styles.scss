@@ -1,0 +1,105 @@
+/**************************************************************************/
+/*========================================================================*/
+/*=============== ITCSS - Harry Roberts' ITCSS Integration ===============*/
+/*========================================================================*/
+/**************************************************************************/
+
+
+/*=====================================*/
+/*============ 1. SETTINGS ============*/
+/*=====================================*/
+/*Usefull when using a preprocessor.
+Conventions defined in the framework, the config variables and constants and the various namespaces used.
+Whatever you write in this layer, it shouldn’t ouput any CSS after compilation.*/
+
+@import "colors.min";       //Colors Declaration
+
+
+/*=====================================*/
+/*============  2. TOOLS   ============*/
+/*=====================================*/
+/*It’s the place to define all your functions, mixins, helpers.
+This code written in this layer shouldn’t output any CSS either.*/
+
+
+/*=====================================*/
+/*============ 3. GENERIC  ============*/
+/*=====================================*/
+/*Define rules that will ouput only basic definitions for generic elements.
+It’s the place to include your reset and/or normalize rules.
+The rules defined here are not necessarily linked to your particular project, but rather rules you might use in every project you make.*/
+
+@import "meyer.min";        //Eric Meyer's Reset v2.0
+@import "normalize.min";    //Normalize
+@import "main.min";         //HTML5 Boilerplate v4.3.0 Baseline
+@import "fonts.min";        //Fonts Importation
+
+
+/*=====================================*/
+/*============   4. BASE   ============*/
+/*=====================================*/
+/*Time to speak about your particular project.
+That layer contains low-specificity rules that may override rules from previous layers*/
+
+@import "base_body.min";         //Body & HTML Structure
+
+
+/*=====================================*/
+/*============ 5. OBJECTS  ============*/
+/*=====================================*/
+/*Find the smallest common multiple between the components of your pages. It is very likely that several parts of your pages will share common properties.
+Write a few rules that you can use in as many locations as possible in your DOM tree.*/
+
+@import "objects_menu.min";              //Menu Structure
+@import "objects_footer.min";            //Footer Structure
+@import "objects_search.min";            //Search field Structure
+@import "objects_shopping-cart.min";     //Client Cart Structure
+@import "objects_promo.min";             //Promotions Structure
+@import "objects_product.min";           //Products Structure
+@import "objects_siteDesc.min";          //Site Description Structure
+@import "objects_filters.min";           //Category filters Structure
+@import "objects_article-details.min";   //Article Details Structure
+@import "objects_add-to-cart.min";       //Add To Cart Interface Structure
+@import "objects_cart-list.min";         //Shopping Cart Interface Structure
+@import "objects_cart-login.min";        //Shopping Cart Login Structure
+@import "objects_ariane.min";            //Breadcrumb (Fil d'Ariane) Structure
+@import "objects_carousel.min";          //Carousel Structure
+@import "objects_store-list.min";        //Store List Structure
+@import "objects_map.min";               //Map API Wrapping Structure
+@import "objects_contact-form.min";      //Contact Form Structure
+
+
+/*=====================================*/
+/*=========== 6. COMPONENTS ===========*/
+/*=====================================*/
+/*It's the place where you define the styles specific to your site’s components.
+In this layer, you will probably increase a bit specificity.
+That layer is the photoshop layer, the one where you decorate your abstract entities defined in the Objects layer.*/
+
+@import "components_body.min";             //Body & HTML Styles
+@import "components_menu.min";             //Menu Styles
+@import "components_footer.min";           //Footer Styles
+@import "components_search.min";           //Search field Styles
+@import "components_shopping-cart.min";    //Client Cart Styles
+@import "components_promo.min";            //Promotions Styles
+@import "components_product.min";          //Products Styles
+@import "components_siteDesc.min";         //Site Description Styles
+@import "components_filters.min";          //Category filters Styles
+@import "components_article-details.min";  //Article Details Styles
+@import "components_add-to-cart.min";      //Add To Cart Interface Styles
+@import "components_cart-list.min";        //Shopping Cart Interface Styles
+@import "components_cart-login.min";       //Shopping Cart Login Styles
+@import "components_ariane.min";           //Breadcrumb (Fil d'Ariane) Styles
+@import "components_carousel.min";         //Carousel Styles
+@import "components_store-list.min";       //Store List Styles
+@import "components_map.min";              //Map API Wrapping Styles
+@import "components_contact-form.min";     //Contact Form Styles
+
+
+/*=====================================*/
+/*============= 7. TRUMPS =============*/
+/*=====================================*/
+/*Rules you want to win in every situation.
+It’s the layer where you define exceptions or extremely particular cases.
+The specificity has to be high.*/
+

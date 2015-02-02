@@ -1,0 +1,27 @@
+extends layout.jade
+
+block title
+    title Contact - Woo4Men
+
+block content
+    - var pageName = 'Contact'
+    
+    section(class='contact')
+        h2=pageName
+        p
+            | Un problème ? Une question ? N’hésitez pas à nous contacter !
+            
+        form(class='contact-form')
+            label(class='form-label') Adresse Email
+            input(class='form-field', type='text')
+            br
+            
+            label(class='form-label') Objet
+            input(class='form-field', type='text')
+            br
+            
+            label(class='form-label') Message
+            textarea(class='form-field')
+            br
+            
+            button(class='button left-button', type='submit') Envoyer

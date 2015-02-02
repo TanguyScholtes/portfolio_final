@@ -1,0 +1,22 @@
+extends layout.jade
+
+block title
+    - var categoryName = 'CHEMISES'
+    
+    title #{categoryName} - Woo4Men
+
+block content
+    - var pageName = 'Chemises'
+    - var productNumber = '15'
+    
+    section(class='category')
+        h2=pageName
+        
+        +category-filter(sexe, ['HOMME', 'FEMME'])
+        +category-filter(taille, ['XS', 'S', 'M', 'L', 'XL', 'XXL'])
+        p(class='product-number')
+            | Il y a #{productNumber} article(s) qui remplissent vos critères.
+        
+        +product-list(productNumber, '../img/chemise02.jpg', 'article-detail.html', 'LM LIGNES', '43,96 €')
+            
+        +backToTop

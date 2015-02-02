@@ -1,0 +1,35 @@
+extends layout.jade
+
+block title
+    title Accueil - Woo4Men
+
+block content
+    div(class='carousel')
+        img(class='carousel-content', src='../img/caroussel.png')
+    
+    section(class='promo')
+        h2 Réductions
+        div(class='product-detail')
+            a(href='article-detail.html')
+                img(src='../img/chemise01.jpg')
+            h3
+                a(href='article-detail.html') STORM
+            p
+                |Polo en coton stretch ajusté .
+                |Confectionné en coton piqué stretch mercerisé, ce polo ajusté est rehaussé de notre Logo distinctif brodé.
+            span(class='old-price') 54,95€
+            span(class='new-price') 43,96 €
+        a(class='see-all-promo button', href='promotions.html') Voir toutes les promotions
+    
+    section(class='vitrine')
+        h2 Produits phares
+        +product-list(20, '../img/chemise02.jpg', 'article-detail.html', 'LM LIGNES', '43,96 €')
+    section(class='site-description')
+        h2 Woo4Men
+        div(class='company-description')
+            p
+                | Woo4Men a été créé par des passionnés de chemises pour des passionnés de chemises avec un service en ligne qui répond aux attentes les plus exigeantes des hommes qui aiment se démarquer et porter des chemises uniques. La collection Woo4Men et 4Woomen est renouvelée tous les mois, et chacune des chemises est un concept exclusif, éditée en série limitée. Tous les genres y trouvent leur compte, du style « exécutive » au style « dandy » en passant par les plus rock !
+            p
+                | Toutes nos chemises sont 100% Coton, gage de qualité tant pour la qualité des tissus utilisés que pour sa résistance dans le temps...
+                
+        img(src='../img/woo4men-pinklogo.png')

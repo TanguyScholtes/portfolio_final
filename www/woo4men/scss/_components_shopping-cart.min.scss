@@ -1,0 +1,25 @@
+.menu-cart{
+    position: absolute;
+    top: 2em;
+    width: 21em;
+    margin-bottom: 2em;
+    background-color: $pink;
+    border-radius: 0 0 15px 15px;
+    padding: 3em 1em 1em 1em;
+    box-shadow: 1px 1px 5px black;
+    a{
+        color: white;
+    }
+}
+
+.client-name{
+    margin-right: 2em;
+}
+
+.client-cart-icon{
+    width: 25px;
+    height: 25px;
+    margin-left: 0.5em;
+}
+
+

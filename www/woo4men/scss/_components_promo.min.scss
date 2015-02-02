@@ -1,0 +1,23 @@
+.old-price{
+    text-decoration: line-through;
+    margin-right: 2em;
+}
+
+.new-price{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.button{
+    background-color: $pink;
+    color: white;
+    text-decoration: none;
+    border: 1px solid $darkPink;
+    border-radius: 7px;
+    padding: 1em 2em;
+}
+
+.button:hover{
+    background-color: lighten($pink, 5%);
+    text-decoration: none;
+}

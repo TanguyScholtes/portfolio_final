@@ -1,0 +1,22 @@
+.filter-item{
+    border-radius: 6px;
+}
+.filter-item a{
+    background-color: $grey;
+    color: black;
+    border-radius: 6px;
+    padding: 0.3em 0.75em;
+    transition: background-color ease 500ms;
+}
+.filter-item a:hover{
+    background-color: $pink;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    transition: background-color ease 500ms;
+}
+
+.current a{
+    background-color: $pink;
+    color: white;
+}

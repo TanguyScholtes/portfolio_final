@@ -1,0 +1,28 @@
+/* ------------ Footer Styles ------------ */
+.developper{
+    color: white;
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer{
+    background-color: $darkPink;
+    color: white;
+    padding-bottom: 1.85em;
+    padding-top: 1em;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer-company-logo{
+    display: block;
+    margin: 1em auto;
+}
+
+.legal{
+    text-align: center;
+}

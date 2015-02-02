@@ -1,0 +1,36 @@
+.promo-fidelity{
+    font-style: italic;
+}
+
+.article-order{
+    background-color: $grey;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2em 0 0 0;
+    
+    label{
+        margin: 1em 0;
+        font-weight: bold;
+    }
+}
+
+.form-field-text{
+    float: right;
+}
+
+.add-to-cart{
+    margin-top: 2em;
+    float: right;
+}
+
+.delivery-free{
+    background-color: $grey;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 2em;
+    
+    h3{
+        color: $pink;
+        margin: 0;
+    }
+}

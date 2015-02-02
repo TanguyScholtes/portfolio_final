@@ -1,0 +1,177 @@
+/* ------------ Fonts Importation ----------- */
+@font-face{
+    font-family: "Saber";
+    src: url('../fonts/Saber-Regular.ttf') format("truetype");
+}
+
+/* ------------ Colors ------------ */
+$bgLight: rgba(225,225,225,0.8);
+$darker: rgba(30,30,30,1);
+$light: rgba(225,225,225,1);
+$hoverDark: rgba(225,225,225,0.2);
+$txtDark: rgba(75,75,75,1);
+$lightBlue: rgba(0,144,255,1);
+
+/* ------------ Imports ------------ */
+@import "normalize.min";    //Normalize
+@import "main.min";         //Cross-Browsers Baseline
+
+@import "menu.min";         //Menu Styles
+@import "footer.min";       //Footer Styles
+@import "char.min";         //Char Sheet Styles
+
+/* ------------ Background Styles ------------ */
+html{
+    background-image: url('../img/background.jpg');
+    background-position: 0 3em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+body{
+    position: relative;
+    height: 100%;
+    font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+    h2, h3, h4{
+        font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    }
+}
+
+
+/* ------------ Main Styles ------------ */
+div.main{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3em 0 2em 0;
+    background-color: $bgLight;
+    min-height: 70%;
+}
+div.main article{
+    margin: 0 3em;
+    color: $darker;
+    a {
+        color: $lightBlue;
+    }
+}
+
+article#profile{
+    ul{
+        list-style-type: none;
+    }
+    h3{
+        display: inline-block;
+    }
+    p a{
+        text-decoration: none;
+    }
+    img, table{
+        margin-left: 1em;
+    }
+}
+
+legend{
+    font-weight: bold;
+}
+
+//Styles for tables
+table tr th{
+    text-align: left;
+    padding-right: 1.5em;
+}
+table tr td{
+    padding-right: 1.5em;
+}
+
+tr.unread a:first-child{
+    font-weight: bold;
+}
+
+//Styles for messenger discussions
+div.message{
+    margin-bottom: 1em;
+}
+div.message:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div.message div.message-timestamp{
+    background-color: $darker;
+    color: white;
+    border: 1px solid gray;
+    p{
+        margin: 0.5em;
+    }
+}
+div.message div.message-expeditor{
+    background-color: rgba(85, 85, 85, 1);
+    border: 1px solid gray;
+    float: left;
+    width: 10em;
+    a{
+        text-decoration: none;
+        padding: 1em;
+    }
+    img{
+        padding: 1em;
+    }
+}
+div.message div.message-expeditor:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div.message div.message-text{
+    background-color: rgb(172, 172, 172);
+    border: 1px solid gray;
+    p{
+        padding: 1em;
+    }
+}
+div.message div.message-text:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div#dest-list{
+    h3{
+        background-color: $darker;
+        color: white;
+        border: 1px solid gray;
+        padding: 0.25em;
+        margin: 0;
+    }
+    p{
+        border: 1px solid gray;
+        background-color: rgb(172, 172, 172);
+        padding: 1em;
+        margin: 0;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+div.message-answer{
+    padding: 1em;
+    padding-bottom: 2em;
+    textarea{
+        width: 98%;
+        height: 10em;
+        margin: 1em;
+    }
+}
+
+article#message-new{
+    input{
+        width: 98%;
+    }
+    textarea{
+        width: 97%;
+        height: 10em;
+        margin: 1em;
+    }
+    fieldset{
+        margin-bottom: 1em;
+    }
+}

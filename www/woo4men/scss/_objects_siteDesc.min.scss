@@ -1,0 +1,13 @@
+.company-description{
+    width: 80%;
+    float: left;
+    margin-right: 2em;
+}
+
+
+
+.site-description:after{
+    content: "";
+    display: block;
+    clear: both;
+}

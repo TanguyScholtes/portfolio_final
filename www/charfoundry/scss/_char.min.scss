@@ -1,0 +1,43 @@
+/* ------------ Char Sheet Styles ------------*/
+h4{
+    display: inline-block;
+    margin: 0;
+}
+h4:after{
+    content: " :"
+}
+
+div.fight-char{
+    width: 25%;
+    position: absolute;
+    top: 12em;
+    left: 38%;
+}
+
+div.weapon{
+    width: 25%;
+    position: absolute;
+    top: 33.5em;
+    left: 38%;
+}
+
+div.armor{
+    width: 25%;
+    position: absolute;
+    top: 47em;
+    left: 38%;
+}
+
+div.feats{
+    width: 25%;
+    position: absolute;
+    top: 62em;
+    left: 38%;
+}
+
+div.skills{
+    width: 25%;
+    position: absolute;
+    top: 12em;
+    left: 60%;
+}

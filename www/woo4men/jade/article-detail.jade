@@ -1,0 +1,102 @@
+extends layout.jade
+
+block title
+    - var productName = 'LM LIGNES'
+    
+    title #{productName} - Woo4Men
+
+block content
+    - var pageName = 'LM LIGNES'
+    - var pageURL = 'article-detail.html'
+    - var productCategory = ['Chemises', 'Homme']
+    - var productCategoryURL = ['shirt.html', 'shirt.html']
+    
+    - var productName = 'LM LIGNES'
+    - var productImageURL = '../img/chemise02.jpg'
+    - var productDescription = 'Chemise Blanche , intérieur du col garni suivi de 3 Boutons juste sous l’encolure. Chemise avec col à bouton .'
+    - var productMaterial = '100% Pur Coton effet « Paper Touch »'
+    - var productTailoring = 'Chemise ajustée'
+    - var productPrice = '43,96 €'
+    
+
+    +ariane(pageName, pageURL, productCategory, productCategoryURL)
+    
+    section(class='product')
+        h2=pageName
+        div(class='product-detail')
+            a(href='#')
+                img(src=productImageURL)
+            h3(class='product-spec') #{productName} :
+            span=productDescription
+            br
+            
+            h3(class='product-spec') Matière :
+            span=productMaterial
+            br
+            
+            h3(class='product-spec') Coupe :
+            span=productTailoring
+            br
+            p(class='size-warning')
+                | Si vous avez l'habitude de prendre nos chemises en cintrée, nous vous conseillons de prendre une taille en dessous.
+                | Exemple : Si "L" en cintrée > Prendre du "M" en Ajustée
+            span(class='price')=productPrice
+                
+        div(class='article-order')
+            form
+                label(class='form-label') #{productCategory[0]} - #{productName}
+                span(class='form-field-text')=productPrice
+                br
+                
+                label(class='form-label', id='product-size') Taille ( #{productCategory[2]} )
+                select(class='form-field', id='product-size')
+                    option(value='XS') XS
+                    option(value='S') S
+                    option(value='M') M
+                    option(value='L') L
+                    option(value='XL') XL
+                    option(value='XXL') XXL
+                br
+                
+                label(class='form-label') Référence
+                span(class='form-field-text') 10101-S
+                br
+                
+                label(class='form-label', for='product-number') Quantité
+                input(class='form-field', type='text')
+                br
+                
+                label(class='form-label', for='product-number') Disponibilité
+                span(class='form-field-text') Disponible
+                br
+                
+                button(class='button add-to-cart', type='submit') Ajouter au panier
+        
+        div(class='delivery-free')
+            h3 Livraison gratuite
+            p Belgique, Pays-Bas, France et Luxembourg.
+            
+        p(class='promo-fidelity')
+            | En achetant ce produit vous pouvez gagner jusqu'à 6,00 € grâce à notre programme de fidélité. Votre panier totalisera 6,00 € qui pourront être convertis en bon de réduction.
+        
+    section(class='related')
+        h2 Ces produits pourraient également vous intéresser  
+        +product-list(4, '../img/chemise02.jpg', 'article-detail.html', 'LM LIGNES', '43,96 €')
+    
+    +backToTop
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                

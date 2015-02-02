@@ -1,0 +1,60 @@
+extends layout.jade
+
+block title
+    
+    title Votre Panier - Woo4Men
+
+block content
+    - var pageName = 'Votre Panier'
+    
+    section(class='shopping-cart')
+        h2=pageName
+        
+        h3(class='cart-step') Étape 3 sur 5 - Adresses de facturation et de livraison
+        
+        div(class='cart-register cart-encart')
+            form
+                fieldset(class='contact-form')
+                    legend Adresse de livraison
+                    label(class='form-label') Nom : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Prénom : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Rue : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Code Postal : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Ville : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Pays : 
+                    input(class='form-field', type='text')
+                    br
+                
+                fieldset(class='contact-form')
+                    legend Adresse de facturation
+                    label(class='form-label') Nom : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Prénom : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Rue : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Code Postal : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Ville : 
+                    input(class='form-field', type='text')
+                    br
+                    label(class='form-label') Pays : 
+                    input(class='form-field', type='text')
+                    br
+                button(class='button next-step', type='submit') Étape suivante »
+            
+            button(class='button previous-step', type='button') « Étape précédente

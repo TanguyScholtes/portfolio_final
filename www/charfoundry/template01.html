@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Accueil - CharFoundry</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<header>
+    <h1 class="title"><a href="index.html">CharFoundry</a></h1>
+    <nav class="top-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="char-list.html">Fiches</a></li>
+            <li><a href="messenger.html">Messagerie</a></li>
+            <li><a href="members-list.html">Membres</a></li>
+            <li><a href="profile01.html">Profil</a></li>
+            <li><a href="#">Déconnexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="side-menu">
+
+</nav>
+    
+<div class="main">
+    <article>
+        <h2>Fiche de personnage Donjon & Dragon Pathfinder 3.5</h2>
+        <form action="#" method="post" class="char-sheet">
+            <fieldset class="general">
+                <legend>Informations générales</legend>
+                <label for="char-name">Nom du personnage</label> <input id="char-name" type="text" name="char-name" /><br>
+                <label for="char-name">Alignement</label> <input id="char-align" type="text" name="char-align" /><br>
+                <label for="char-name">Classe</label>
+                    <select id="char-name">
+                        <option value="barbare">Barbare</option>
+                        <option value="barde">Barde</option>
+                        <option value="druide">Druide</option>
+                        <option value="ensorceleur">Ensorceleur</option>
+                        <option value="guerrier">Guerrier</option>
+                        <option value="magicien">Magicien</option>
+                        <option value="moine">Moine</option>
+                        <option value="paladin">Paladin</option>
+                        <option value="pretre">Prêtre</option>
+                        <option value="rodeur">Rôdeur</option>
+                        <option value="roublard">Roublard</option>
+                    </select><br>
+                <label for="char-level">Niveau</label> <input id="char-level" type="text" name="char-level" placeholder="1" /><br>
+                <label for="char-divin">Divinité</label> <input id="char-divin" type="text" name="char-divin" /><br>
+                <label for="char-origin">Origine</label> <input id="char-origin" type="text" name="char-origin" /><br>
+                <label for="char-race">Race</label> <input id="char-race" type="text" name="char-race" /><br>
+                <label for="char-sex">Sexe</label>
+                    <select id="char-name">
+                        <option value="unknown">Indéterminé</option>
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                    </select><br>
+                <label for="char-age">Age</label> <input id="char-age" type="text" name="char-age" /><br>
+                <label for="char-weight">Poids</label> <input id="char-weight" type="text" name="char-weight" /><br>
+                <label for="char-size">Taille</label> <input id="char-size" type="text" name="char-size" /><br>
+                <label for="char-size-chart">Catégorie de Taille</label>
+                    <select id="char-size-chart">
+                        <option value="small">Petit</option>
+                        <option value="middle">Moyen</option>
+                        <option value="big">Grand</option>
+                    </select><br>
+                <label for="char-eyes">Couleur des yeux</label> <input id="char-eyes" type="text" name="char-eyes" /><br>
+                <label for="char-hairs">Couleur des cheveux</label> <input id="char-hairs" type="text" name="char-hairs" /><br>
+                <label for="char-lang">Langues</label> <textarea id="char-lang" name="char-lang"></textarea><br>
+                <label for="gold">Richesses</label> <input id="golds" type="text" name="gold" /><br>
+                <label for="xp">Expérience</label> <input id="xp" type="text" name="xp" /><br>
+            </fieldset>
+            
+            <fieldset class="carac">              
+                <legend>Caractéristiques</legend>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Valeur</th>
+                        <th>Modificateur</th>
+                    </tr>
+                    <tr>
+                        <th><label for="FOR">Force</label></th>
+                        <td><input id="FOR" type="number" name="FOR" min="1" max="20" placeholder="10"></td>
+                        <td><input id="FOR-modif" type="number" name="FOR-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="DEX">Dextérité</label></th>
+                        <td><input id="DEX" type="number" name="DEX" min="1" max="20" placeholder="10"></td>
+                        <td><input id="DEX-modif" type="number" name="DEX-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="CON">Constitution</label></th>
+                        <td><input id="CON" type="number" name="CON" min="1" max="20" placeholder="10"></td>
+                        <td><input id="CON-modif" type="number" name="CON-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="INT">Intelligence</label></th>
+                        <td><input id="INT" type="number" name="INT" min="1" max="20" placeholder="10"></td>
+                        <td><input id="INT-modif" type="number" name="INT-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="SAG">Sagesse</label></th>
+                        <td><input id="SAG" type="number" name="SAG" min="1" max="20" placeholder="10"></td>
+                        <td><input id="SAG-modif" type="number" name="SAG-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="CHA">Charisme</label></th>
+                        <td><input id="CHA" type="number" name="CHA" min="1" max="20" placeholder="10"></td>
+                        <td><input id="CHA-modif" type="number" name="CHA-modif" min="-5" max="5" placeholder="0"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset class="fight-char">
+                <legend>Caractéristiques de combat</legend>
+                <label for="hp">Points de vie</label> <input id="hp" type="text" name="hp" /><br>
+                <label for="speed">Initiative</label> <input id="speed" type="text" name="speed" /><br>
+                <label for="CA">Classe d'armure</label> <input id="CA" type="text" name="CA" /><br>
+                <label for="CA-contact">Classe d'armure de contact</label> <input id="CA-contact" type="text" name="CA-contact" /><br>
+                <label for="CA-flat-footed">Classe d'armure au dépourvu</label> <input id="CA-flat-footed" type="text" name="CA-flat-footed" /><br>
+                <label for="reflex">Réflexes</label> <input id="reflex" type="text" name="reflex" /><br>
+                <label for="fortitude">Vigueur</label> <input id="fortitude" type="text" name="fortitude" /><br>
+                <label for="will">Volonté</label> <input id="will" type="text" name="will" /><br>
+                <label for="BBA">Bonus de Base à l'Attaque</label> <input id="BBA" type="text" name="BBA" /><br>
+                <label for="magic-resist">Résistance à la magie</label> <input id="magic-resist" type="text" name="magic-resist" /><br>
+                <label for="BMO">Bonus de Manoeuvre Offensive</label> <input id="BMO" type="text" name="BMO" /><br>
+                <label for="DMD">Degré de Manoeuvre Défensive</label> <input id="DMD" type="text" name="DMD" /><br>
+            </fieldset>
+            
+            <fieldset class="weapon">
+                <legend>Arme</legend>
+                <label for="weapon-name">Nom de l'arme</label> <input id="weapon-name" type="text" name="weapon-name" /><br>
+                <label for="weapon-type">Type de l'arme</label> <input id="weapon-type" type="text" name="weapon-type" /><br>
+                <label for="weapon-range">Portée de l'arme</label> <input id="weapon-range" type="text" name="weapon-range" /><br>
+                <label for="weapon-ammo">Munitions</label> <input id="weapon-ammo" type="text" name="weapon-ammo" /><br>
+                <label for="weapon-touch">Bonus à l'Attaque</label> <input id="weapon-touch" type="text" name="weapon-touch" /><br>
+                <label for="weapon-damages">Dégâts de l'arme</label> <input id="weapon-damages" type="text" name="weapon-damages" /><br>
+                <label for="weapon-crit">Critique</label> <input id="weapon-crit" type="text" name="weapon-crit" /><br>
+            </fieldset>
+            
+            <fieldset class="armor">
+                <legend>Armure</legend>
+                <table>
+                    <tr>
+                        <th><label for="armor-name">Nom de l'armure</label></th>
+                        <th><label for="armor-bonus">Bonus de l'armure</label></th>
+                        <th><label for="armor-type">Type d'armure</label></th>
+                        <th><label for="armor-penalty">Pénalité</label></th>
+                        <th><label for="armor-spell">Échec de sorts</label></th>
+                        <th><label for="armor-weight">Poids de l'armure</label></th>
+                        <th><label for="armor-property">Propriétés de l'armure</label></th>
+                    </tr>
+                    <tr>
+                        <td><input id="armor-name" type="text" name="armor-name" /></td>
+                        <td><input id="armor-bonus" type="text" name="armor-bonus" /></td>
+                        <td><input id="armor-type" type="text" name="armor-type" /></td>
+                        <td><input id="armor-penalty" type="text" name="armor-penalty" /></td>
+                        <td><input id="armor-spell" type="text" name="armor-spell" /></td>
+                        <td><input id="armor-weight" type="text" name="armor-weight" /></td>
+                        <td><input id="armor-property" type="text" name="armor-property" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset class="items">
+                <legend>Équipement</legend>
+                <table>
+                    <tr>
+                        <th>Objets</th>
+                        <th>Poids</th>
+                    </tr>
+                    <tr>
+                        <th><input id="item01" type="text" name="item01" /></th>
+                        <th><input id="item01-weight" type="text" name="item01-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item02" type="text" name="item02" /></th>
+                        <th><input id="item02-weight" type="text" name="item02-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item03" type="text" name="item03" /></th>
+                        <th><input id="item03-weight" type="text" name="item03-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item04" type="text" name="item04" /></th>
+                        <th><input id="item04-weight" type="text" name="item04-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item05" type="text" name="item05" /></th>
+                        <th><input id="item05-weight" type="text" name="item05-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item06" type="text" name="item06" /></th>
+                        <th><input id="item06-weight" type="text" name="item06-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item07" type="text" name="item07" /></th>
+                        <th><input id="item07-weight" type="text" name="item07-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item08" type="text" name="item08" /></th>
+                        <th><input id="item08-weight" type="text" name="item08-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item09" type="text" name="item09" /></th>
+                        <th><input id="item09-weight" type="text" name="item09-weight" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id="item10" type="text" name="item10" /></th>
+                        <th><input id="item10-weight" type="text" name="item10-weight" /></th>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset class="skills">
+                <legend>Compétences</legend>
+                <table>
+                    <tr>
+                        <th><label>Nom de la compétence</label></th>
+                        <th><label>Bonus total</label></th>
+                        <th><label>Carac. associée</label></th>
+                        <th><label>Rang</label></th>
+                    </tr>
+                    <tr>
+                        <td>Acrobaties</td>
+                        <td><input id="acrobatics-total" type="text" name="armor-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="acrobatics-rank" type="text" name="acrobatics-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Artisanat <input id="craft-type" type="text" name="craft-type" /></td>
+                        <td><input id="craft-total" type="text" name="craft-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="craft-rank" type="text" name="craft-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Art de la magie</td>
+                        <td><input id="spellcraft-total" type="text" name="spellcraft-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="spellcraft-rank" type="text" name="spellcraft-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Bluff</td>
+                        <td><input id="bluff-total" type="text" name="bluff-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="bluff-rank" type="text" name="bluff-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Exploration)</td>
+                        <td><input id="knowledge-explo-total" type="text" name="knowledge-explo-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-explo-rank" type="text" name="knowledge-explo-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Folklore local)</td>
+                        <td><input id="knowledge-folk-total" type="text" name="knowledge-folk-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-folk-rank" type="text" name="knowledge-folk-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Géographie)</td>
+                        <td><input id="knowledge-geo-total" type="text" name="knowledge-geo-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-geo-rank" type="text" name="knowledge-geo-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Histoire)</td>
+                        <td><input id="knowledge-hist-total" type="text" name="knowledge-hist-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-hist-rank" type="text" name="knowledge-hist-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Ingénierie)</td>
+                        <td><input id="knowledge-engine-total" type="text" name="knowledge-engine-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-engine-rank" type="text" name="knowledge-engine-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Mystères)</td>
+                        <td><input id="knowledge-myst-total" type="text" name="knowledge-myst-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-myst-rank" type="text" name="knowledge-myst-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Nature)</td>
+                        <td><input id="knowledge-nature-total" type="text" name="knowledge-nature-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-nature-rank" type="text" name="knowledge-nature-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Noblesse)</td>
+                        <td><input id="knowledge-noble-total" type="text" name="knowledge-noble-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-noble-rank" type="text" name="knowledge-noble-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Plans)</td>
+                        <td><input id="knowledge-realm-total" type="text" name="knowledge-realm-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-realm-rank" type="text" name="knowledge-realm-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conn.(Religion)</td>
+                        <td><input id="knowledge-religion-total" type="text" name="knowledge-religion-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="knowledge-religion-rank" type="text" name="knowledge-religion-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Déguisement</td>
+                        <td><input id="disguise-total" type="text" name="disguise-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="disguise-rank" type="text" name="disguise-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Diplomacie</td>
+                        <td><input id="diplomacy-total" type="text" name="diplomacy-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="diplomacy-rank" type="text" name="diplomacy-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Discrétion</td>
+                        <td><input id="sneak-total" type="text" name="sneak-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="sneak-rank" type="text" name="sneak-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Dressage</td>
+                        <td><input id="tame-total" type="text" name="tame-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="tame-rank" type="text" name="tame-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Équitation</td>
+                        <td><input id="ride-total" type="text" name="ride-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="ride-rank" type="text" name="ride-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Escalade</td>
+                        <td><input id="climb-total" type="text" name="climb-total" /></td>
+                        <td>Force</td>
+                        <td><input id="climb-rank" type="text" name="climb-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Escamotage</td>
+                        <td><input id="escamotage-total" type="text" name="escamotage-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="escamotage-rank" type="text" name="escamotage-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Estimation</td>
+                        <td><input id="estimate-total" type="text" name="estimate-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="estimate-rank" type="text" name="estimate-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Évasion</td>
+                        <td><input id="evade-total" type="text" name="evade-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="evade-rank" type="text" name="evade-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Intimidation</td>
+                        <td><input id="intimidate-total" type="text" name="intimidate-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="intimidate-rank" type="text" name="intimidate-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Linguistique</td>
+                        <td><input id="language-total" type="text" name="language-total" /></td>
+                        <td>Intelligence</td>
+                        <td><input id="language-rank" type="text" name="language-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Natation</td>
+                        <td><input id="swim-total" type="text" name="swim-total" /></td>
+                        <td>Force</td>
+                        <td><input id="swim-rank" type="text" name="swim-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Perception</td>
+                        <td><input id="perception-total" type="text" name="perception-total" /></td>
+                        <td>Sagesse</td>
+                        <td><input id="perception-rank" type="text" name="perception-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Premiers Secours</td>
+                        <td><input id="first-aid-total" type="text" name="first-aid-total" /></td>
+                        <td>Sagesse</td>
+                        <td><input id="first-aid-rank" type="text" name="first-aid-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Profession <input id="profession-type" type="text" name="profession-type" /></td>
+                        <td><input id="profession-total" type="text" name="profession-total" /></td>
+                        <td>Sagesse</td>
+                        <td><input id="profession-rank" type="text" name="profession-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Psychologie</td>
+                        <td><input id="psycho-total" type="text" name="psycho-total" /></td>
+                        <td>Sagesse</td>
+                        <td><input id="psycho-rank" type="text" name="psycho-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Représentation <input id="perform-type" type="text" name="perform-type" /></td>
+                        <td><input id="perform-total" type="text" name="perform-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="perform-rank" type="text" name="perform-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Sabotage</td>
+                        <td><input id="disable-total" type="text" name="disable-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="disable-rank" type="text" name="disable-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Survie</td>
+                        <td><input id="survival-total" type="text" name="survival-total" /></td>
+                        <td>Sagesse</td>
+                        <td><input id="survival-rank" type="text" name="survival-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Utilisation d'objets magiques</td>
+                        <td><input id="magic-items-total" type="text" name="magic-items-total" /></td>
+                        <td>Charisme</td>
+                        <td><input id="magic-items-rank" type="text" name="magic-items-rank" /></td>
+                    </tr>
+                    <tr>
+                        <td>Vol</td>
+                        <td><input id="fly-total" type="text" name="fly-total" /></td>
+                        <td>Dextérité</td>
+                        <td><input id="fly-rank" type="text" name="fly-rank" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset class="feats">
+                <legend>Dons</legend>
+                    <textarea id="feats" name="feats"></textarea>
+            </fieldset>
+            <button type="submit">Valider la fiche</button>
+        </form>
+    </article>
+</div> <!-- #main -->
+
+<footer>
+    <div class="contact">
+        <h2>Contactez-nous !</h2>
+        <span>info@charfoundry.be</span>
+	</div> <!-- #contact -->
+
+    <div id="legal">
+        <span class="site">CharFoundry - 2014</span><br />
+        <span class="developper"><a href="#">Tanguy SCHOLTES</a> - 2014 - Tous droits réservés</span>
+    </div> <!-- #legal -->
+</footer>
+
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+</body>
+</html>

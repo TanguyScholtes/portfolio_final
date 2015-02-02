@@ -1,0 +1,28 @@
+.cart-register, .cart-login{
+    width: 46%;
+    display: inline-block;
+    min-height: 14em;
+}
+
+.next-step{
+        float: right;
+        margin-top: 1em;
+}  
+
+.previous-step{
+    background-color: $grey;
+    color: black;
+    border: 1px solid gray;
+}
+
+.previous-step:hover{
+    background-color: gray;
+    border: 1px solid darkgray;
+    color: white;
+}
+
+.login-button{
+    position: relative;
+    bottom: -3em;
+    right: 0;
+}

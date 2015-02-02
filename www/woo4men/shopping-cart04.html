@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Votre Panier - Woo4Men</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300italic&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<header class="header">
+    <h1 class="title">
+        <a href="index.html">Woo4Men</a>
+    </h1>
+    <nav class="menu">
+        <h2 class="nav-title">Menu de Navigation</h2>
+            <a class="menu-item" href="index.html">ACCUEIL</a>
+            <a class="menu-item" href="shirt.html">CHEMISES</a>
+            <a class="menu-item" href="pull.html">PULLS</a>
+            <a class="menu-item" href="polo.html">POLOS</a>
+            <a class="menu-item" href="magasins.html">MAGASINS</a>
+            <a class="menu-item" href="contact.html">CONTACT</a>
+            <a class="menu-item" href="index.html">DÉCONNEXION</a>
+    </nav>
+    
+</header>
+    
+<div class="main">
+    <div class="menu-cart">
+        <span class="client-name">Bienvenue, Albert Durant</span>
+        <a class="client-cart" href="shopping-cart.html">0 article(s)</a>
+        <img class="client-cart-icon" src="img/cart.png">
+    </div>
+    <form class="search-form">
+        <input class="search-field" type="text" placeholder="Rechercher"/>
+        <button class="search-button" type="submit">
+            <img src="img/search.png" width="27px" height="27px"/>
+        </button>
+    </form>
+    
+    <p class="ariane"><a href="index.html">ACCUEIL</a> > <a class="ariane-current" href="article-detail.html">Votre Panier</a></p>
+    
+    <section class="shopping-cart">
+        <h2>Votre Panier</h2>
+        
+        <h3 class="cart-step">Étape 4 sur 5 - Frais de port</h3>
+        
+        <form>
+            <table>
+                <thead class="table-headings">
+                    <tr>
+                        <th>Transporteur</th>
+                        <th>Informations</th>
+                        <th> </th>
+                        <th>Prix</th>
+                    </tr>  
+                </thead>
+                <tbody>
+                    <tr class="cart-list">
+                        <td>DPD (B2C)</td>
+                        <td>Livraison express sécurisée avec suivi</td>
+                        <td> </td>
+                        <td>Gratuit</td>
+                    </tr>
+                    <tr class="cart-list">
+                        <td> </td>
+                        <td> </td>
+                        <td class="table-pink">Total produits TTC</td>
+                        <td>149,90 €</td>
+                    </tr>
+                    <tr class="cart-list">
+                        <td> </td>
+                        <td> </td>
+                        <td class="table-bold table-pink">Total achats TTC</td>
+                        <td class="table-bold">149,90 €</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="button previous-step" type="button">« Étape précédente</button>
+            <button class="button next-step" type="submit">Étape suivante »</button>
+        </form>
+    </section>
+    
+</div> <!-- #main -->
+
+<footer class="footer">    
+    <img class="footer-company-logo" src="img/woo4men.png">
+
+    <div class="legal">
+        <span class="site">© 2014 - Woo4men.com - Tous droits réservés.</span><br />
+        <span class="developper"><a href="#">Tanguy SCHOLTES</a>, Webdesigner - 2014</span>
+    </div> <!-- #legal -->
+</footer>
+
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+extends layout.jade
+
+block title
+    
+    title Votre Panier - Woo4Men
+
+block content
+    - var pageName = 'Votre Panier'
+    - var previousPrice = 149.90
+    - var deliveries = [['DPD (B2C)', 'Livraison expresse sécurisée avec suivi', 'Gratuit']]
+    //Each delivery service in the deliveries table is presented like this :
+    //0. Delivery service name
+    //1. Delivery service informations
+    //2. Delivery price
+    
+    section(class='shopping-cart')
+        h2=pageName
+        
+        h3(class='cart-step') Étape 4 sur 5 - Frais de port
+        
+        form
+            table
+                thead(class='table-headings')
+                    tr
+                        th Transporteur
+                        th Informations
+                        th
+                        th Prix
+                tbody
+                    each val, index in deliveries
+                        tr(class='cart-list')
+                            td=deliveries[index][0]
+                            td=deliveries[index][1]
+                            td
+                            td=deliveries[index][2]
+                            
+                    tr(class='cart-list')
+                        td
+                        td
+                        td(class='table-pink') Total produits TTC
+                        td #{previousPrice} €
+                        
+                    tr(class='cart-list')
+                        td
+                        td
+                        td(class='table-bold table-pink') Total achats TTC
+                        td(class='table-bold') #{previousPrice} €
+            button(class='button next-step', type='submit') Étape suivante »
+            button(class='button previous-step', type='button') « Étape précédente

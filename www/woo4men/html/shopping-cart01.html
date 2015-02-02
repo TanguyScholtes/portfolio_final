@@ -1,0 +1,112 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,300italic&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/styles.css"><!--[if lt IE 9]>
+  <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+  <![endif]-->
+  <title>Votre Panier - Woo4Men</title>
+</head>
+<body>
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!--Generates a list of products based on passed arguments-->
+  <!--Generates a breadcrumbs-->
+  <!--Generates a "Back to top" link-->
+  <!--Generates a vcard for a store-->
+  <!--Generates filters for clothes category (size, sex, ...)-->
+  <header class="header">
+    <h1 class="title"><a href="index.html">Woo4Men</a></h1>
+    <nav class="menu">
+      <h2 class="nav-title">Menu de Navigation</h2><a href="index.html" class="menu-item">ACCUEIL</a><a href="shirt.html" class="menu-item">CHEMISES</a><a href="pull.html" class="menu-item">PULLS</a><a href="polo.html" class="menu-item">POLOS</a><a href="magasins.html" class="menu-item">MAGASINS</a><a href="contact.html" class="menu-item">CONTACT</a><a href="index.html" class="menu-item">DÉCONNEXION</a>
+    </nav>
+  </header>
+  <div class="main">
+    <!--shopping cart-->
+    <div class="menu-cart"><span class="client-name">Bienvenue, Albert Durant</span><a href="shopping-cart.html" class="client-cart">0 article(s)</a><img src="../img/cart.png" class="client-cart-icon"></div>
+    <!--search form-->
+    <form class="search-form">
+      <input type="text" placeholder="Rechercher" class="search-field">
+      <button type="submit" class="search-button"><img src="../img/search.png" width="27px" height="27px"></button>
+    </form>
+    <!--Each article in the articles table is presented like this :-->
+    <!--0. Image URL-->
+    <!--1. Article page URL-->
+    <!--2. Article name-->
+    <!--3. Article sex-->
+    <!--4. Article size-->
+    <!--5. Article price-->
+    <!--6. Quantity-->
+    <section class="shopping-cart">
+      <h2>Votre Panier</h2>
+      <h3 class="cart-step">Étape 1 sur 5 - Récapitulatif de la commande</h3>
+      <form class="form">
+        <table>
+          <thead class="table-headings">
+            <tr>
+              <th>Produit</th>
+              <th>Description</th>
+              <th>Prix unitaire</th>
+              <th>Quantité</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-list">
+              <td><img src="../img/chemise01.jpg" class="cart-product-mini"></td>
+              <td><a href="article-detail.html">LM LIGNES</a><span class="cart-size">Taille (Homme) : L</span></td>
+              <td><span>79.95 €</span></td>
+              <td>
+                <input type="number" placeholder="1"><a href="#"><img src="../img/cross.png" class="cart-red-cross"></a>
+              </td>
+              <td><span>79.95 €</span></td>
+            </tr>
+            <tr class="cart-list">
+              <td><img src="../img/chemise02.jpg" class="cart-product-mini"></td>
+              <td><a href="article-detail.html">STORM</a><span class="cart-size">Taille (Homme) : L</span></td>
+              <td><span>65.99 €</span></td>
+              <td>
+                <input type="number" placeholder="2"><a href="#"><img src="../img/cross.png" class="cart-red-cross"></a>
+              </td>
+              <td><span>131.98 €</span></td>
+            </tr>
+            <tr class="cart-list">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="table-bold table-pink"><span>Total produits TTC</span></td>
+              <td class="table-bold"><span>211.93 €</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="code-promo cart-encart">
+          <label for="code-promo">Code promotionnel</label>
+          <input type="text" id="code-promo" name="code-promo">
+          <button type="button" class="button">Ajouter</button>
+        </div>
+        <button type="submit" class="button next-step">Étape suivante »</button>
+      </form>
+    </section>
+  </div>
+  <footer class="footer"><img src="../img/woo4men.png" class="footer-company-logo">
+    <div class="legal">
+      <p class="site">© 2014 - Woo4men.com - Tous droits réservés.</p>
+      <p class="developper"><a href="#">Tanguy SCHOLTES</a>, Webdesigner - 2014</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+</body>

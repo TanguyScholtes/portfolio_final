@@ -1,0 +1,54 @@
+/* ------------ Menus Styles ------------ */
+nav{
+    background-color: $darker;
+    color: $light;
+}
+nav ul li a{
+    color: $light;
+    text-decoration: none;
+}
+
+/* ------------ Top Menu Styles ------------ */
+header{
+    position: absolute;
+    background-color: $darker;
+    color: $light;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    width: 100%;
+    height: 3.5em;
+    position: fixed;
+}
+header h1{
+    display: inline-block;
+    position: absolute;
+    top: -0.8em;
+    left: 12.5%;
+    font-family: "Saber", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 3em;
+    text-shadow: 2px 2px black;
+}
+header h1 a{
+    color: $light;
+    text-decoration: none;
+}
+header ul{
+    position: absolute;
+    display: inline-block;
+    right: 12.5%;
+}
+header li{
+    display: inline-block;
+    margin-left: 0.25em;
+    border-radius: 6px;
+}
+header li a{
+    border-radius: 6px;
+    padding: 0.3em 0.75em;
+    transition: background-color ease 500ms;
+}
+header li a:hover{
+    background-color: $hoverDark;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    transition: background-color ease 500ms;
+}

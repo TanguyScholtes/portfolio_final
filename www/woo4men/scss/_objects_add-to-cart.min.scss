@@ -1,0 +1,15 @@
+.article-order{
+    width: 46%;
+    float: right;
+}
+
+.delivery-free{
+    width: 46%;
+}
+
+.promo-fidelity:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+

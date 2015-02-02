@@ -1,0 +1,17 @@
+.org{
+    font-weight: bold;
+}
+
+.org, .tel{
+    text-transform: uppercase;
+    color: $pink;
+}
+
+.country-name{
+    text-transform: uppercase;
+}
+
+.vcard{
+    padding: 1em;
+    display: inline-block;
+}

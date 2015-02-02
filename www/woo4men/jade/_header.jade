@@ -1,0 +1,7 @@
+header(class='header')
+    h1(class='title')
+        a(href='index.html') Woo4Men
+    nav(class='menu')
+        h2(class='nav-title') Menu de Navigation
+        each val, index in aMenuItems
+            a(class='menu-item', href= aMenuURL[index])=val

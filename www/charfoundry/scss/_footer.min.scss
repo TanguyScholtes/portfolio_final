@@ -1,0 +1,26 @@
+/* ------------ Footer Styles ------------ */
+footer{
+    width: 100%;
+    background-color: $darker;
+    color: $light;
+    //padding: 0 12.5%;
+    border-top: 1px solid black;
+    padding-bottom: 1.85em;
+}
+footer div.contact{
+    padding-left: 12.5%;
+    h2{
+        margin-bottom: 0.25em;
+    }
+}
+footer div#legal span{
+    display: block;
+    text-align: center;
+}
+span.developper{
+    color: $txtDark;
+    a {
+        color: $lightBlue;
+        text-decoration: none;
+    }
+}

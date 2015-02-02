@@ -1,0 +1,62 @@
+//------- Product List Mixin
+//Generates a list of products based on passed arguments
+mixin product-list(listSize, imageURL, productURL, productName, productPrice)
+
+    - for(var x = 0 ; x < listSize ; x++){
+        div(class='product-preview')
+            a(href=productURL)
+                img(src=imageURL)
+            h3(class='product-name')
+                a(href=productURL)=productName
+            span(class='product-price')=productPrice
+    - }
+
+
+//------- Breadcrumbs - Fil d'Ariane Mixin
+//Generates a breadcrumbs
+mixin ariane(pageName, pageURL, productCategory, productCategoryURL)
+
+    p(class='ariane')
+        a(href='index.html') Accueil
+        | > 
+        - if (productCategory && productCategoryURL) {
+            a(href=productCategoryURL[0])=productCategory[0]
+            | > 
+            a(href=productCategoryURL[1])=productCategory[1]
+            | >
+        - }
+        a(href=pageURL)=pageName
+        
+//------- "Back to top" link Mixin
+//Generates a "Back to top" link
+mixin backToTop()
+
+    p(class='back-to-top')
+        a(href='#top') Retour en haut
+        
+//------- Store Vcard Mixin
+//Generates a vcard for a store
+mixin store-vcard(company, street, locality, postalCode, country, phoneNumber)
+
+    div(class='vcard')
+        div(class='org')=company
+        div(class='adr')
+            div(class='street-address')=street
+            span(class='locality')=locality
+            span(class='postal-code')=postalCode
+            br
+            span(class='country-name')=country
+        div(class='tel')=phoneNumber
+
+//------- Category Filter Mixin
+//Generates filters for clothes category (size, sex, ...)
+mixin category-filter(type, category)
+
+    div(class='filter-#{type}')
+        span Filtrer par #{type} :
+        ul(class='filter-list')
+            li(class='filter-item current')
+                a(href='#') TOUT
+            each val in category
+                li(class='filter-item')
+                    a(href='#')=val

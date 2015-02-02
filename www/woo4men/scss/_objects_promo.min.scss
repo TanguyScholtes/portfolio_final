@@ -1,0 +1,23 @@
+.promo{
+    position: relative;
+}
+
+.product-detail img{
+    float: left;
+    margin: 0 1em;
+    width: 255px;
+    height: 255px;
+}
+
+.product-detail:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.see-all-promo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+

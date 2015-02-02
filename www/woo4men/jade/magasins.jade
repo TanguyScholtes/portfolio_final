@@ -1,0 +1,29 @@
+extends layout.jade
+
+block title
+    title Magasins - Woo4Men
+
+block content
+    - var pageName = 'Magasins'
+    
+    section(class='shops')
+        h2=pageName
+        p
+            | Pour trouver notre point de vente le plus proche de chez vous, référez-vous à la carte ou à la liste des adresses.
+            
+        div(class='map-wrapper')
+            img(src='../img/map.png')
+            
+        div(class='store-list')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            +store-vcard('Terre Neuve Belle-Île', 'Quai des Vennes', 'Liège', '4000', 'Belgique', '04 344 49 39')
+            
+        +backToTop

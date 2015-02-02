@@ -1,0 +1,39 @@
+.main{
+    background-color: $white;
+}
+
+body{
+    background-image: url('../img/snow-background.png');
+    background-repeat: repeat;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $pink;
+}
+
+h2{
+    margin-top: 3em;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.vitrine span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: $pink;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.back-to-top{
+    text-align: center;
+}

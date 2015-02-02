@@ -1,0 +1,42 @@
+.contact-form{
+    display: inline-block;
+    width: 40%;
+    padding: 1em;
+    min-height: 16.5em;
+}
+
+.form-field{
+    border-radius: 5px;
+    padding: 0.25em 0.5em;
+    border: 1px solid gray;
+    margin: 0.5em;
+    float: right;
+}
+
+.form-label:before{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-label{
+    position: relative;
+    top: 0.75em;
+}
+
+.spacer{
+    display: block;
+    clear: both;
+}
+
+.left-button{
+    position: relative;
+    right: -63%;
+    bottom: -5em;
+}
+
+.contact-form:after{
+    content: "";
+    display: block;
+    clear: both;
+}
